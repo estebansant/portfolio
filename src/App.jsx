@@ -20,12 +20,12 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <div className="bg-red-500">Hello World!</div>
+        <div className="bg-red-500 font-Lato">Hello World!</div>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className="text-3xl font-bold underline">
+      <p className="text-3xl font-Merriweather text-xl underline">
         Click on the Vite and React logos to learn more
       </p>
     </div>

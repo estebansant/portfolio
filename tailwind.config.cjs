@@ -7,16 +7,38 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      sm: '320px',
+      md: '768px',
+      lg: '1280px',
+      xl: '2560px',
+    },
     colors: {
-      // Build your palette here
-      black: '#252422',
-      secondary_black: '#403d39',
-      gray: '#ccc5b9',
-      white: '#FAFAFA',
-      secondary_white: '#f1faee',
-      green: '#38b000',
+      // Color palette
+      'black': '#252422',
+      'secondary-black': '#403d39',
+      'gray': '#ccc5b9',
+      'white': '#FAFAFA',
+      'secondary-white': '#f1faee',
+      'green': '#38b000',
+    },
+    fontFamily:{
+      Merriweather:['Merriweather', 'serif'],
+      Lato:['Lato', 'sans-serif']
+    },
+    spacing: {
+      px: '1px',
+    },
+    borderRadius: {
+      'none': '0',
+      'sm': '8px',
+      DEFAULT: '12px',
+      'lg': '16px',
+      'full': '50%',
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
