@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from 'react';
+import { Header } from './Components/Header';
+import { Home } from './Components/Home';
+import { About } from './Components/About';
+import { Skills } from './Components/Skills';
+import { Portfolio } from './Components/Portfolio';
+import { Experience } from './Components/Experience';
+import { Contact } from './Components/Contact';
+import { Footer } from './Components/Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite oo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <div className="bg-red-500 font-Lato">Hello World!</div>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="text-3xl font-Merriweather text-xl underline">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <React.Fragment>
+      <Header />
+      <Home />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Experience />
+      <Contact />
+      <Footer />
+    </React.Fragment>
   )
 }
 

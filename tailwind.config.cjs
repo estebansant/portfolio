@@ -26,9 +26,6 @@ module.exports = {
       Merriweather:['Merriweather', 'serif'],
       Lato:['Lato', 'sans-serif']
     },
-    spacing: {
-      px: '1px',
-    },
     borderRadius: {
       'none': '0',
       'sm': '8px',
