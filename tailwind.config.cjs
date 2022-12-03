@@ -29,9 +29,16 @@ module.exports = {
     borderRadius: {
       'none': '0',
       'sm': '8px',
-      DEFAULT: '12px',
+      'md': '12px',
       'lg': '16px',
       'full': '50%',
+    },
+    boxShadow:{
+      'sm': '0 2px 4px 0 rgb(0 0 0 / 0.45)',
+      'md': '3px 4px 6px 1px rgb(0 0 0 / 0.45)',
+      'md2': '0 4px 6px 1px rgb(0 0 0 / 0.35)',
+      'lg': '6px 10px 15px -3px rgb(0 0 0 / 0.45)',
+      'xl': '9px 20px 25px -5px rgb(0 0 0 / 0.45)',
     },
     extend: {},
   },
