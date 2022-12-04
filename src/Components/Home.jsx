@@ -9,11 +9,11 @@ const Home = () => {
       </div>
       
       <div className="w-full h-auto px-4 flex justify-center items-center shrink-0 space-x-3">
-        <a href="#contact" className="w-36 h-12 bg-black rounded-md flex items-center justify-center shadow-md">
-          <p className="px-5 py-1 text-white font-Lato font-semibold text-lg">Contact me</p>
+        <a href="#contact" className="w-36 h-12 bg-black rounded-md flex items-center justify-center shadow-md transtition transition-all duration-300 easi-in-out hover:bg-secondary-white">
+          <p className="px-5 py-1 text-white font-Lato font-semibold text-lg transtition transition-all duration-300 easi-in-out hover:text-black">Contact me</p>
         </a>
-        <button className="w-36 h-12 bg-black rounded-md shadow-md">
-          <p className="px-3 py-1 text-white font-Lato font-semibold text-lg">Download CV</p>
+        <button className="w-36 h-12 bg-black rounded-md shadow-md transtition transition-all duration-300 easi-in-out hover:bg-secondary-white">
+          <p className="px-3 py-1 text-white font-Lato font-semibold text-lg transtition transition-all duration-300 easi-in-out hover:text-black">Download CV</p>
         </button>
       </div>
 
