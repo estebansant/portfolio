@@ -26,6 +26,16 @@ module.exports = {
       Merriweather:['Merriweather', 'serif'],
       Lato:['Lato', 'sans-serif']
     },
+    fontSize:{
+      'sm': '14px',
+      'base': '16px',
+      'l': '18px',
+      'xl': '20px',
+      '2xl': '24px',
+      '3xl': '32px',
+      '4xl': '38px',
+      '5xl': '46px',
+    },
     borderRadius: {
       'none': '0',
       'sm': '8px',
