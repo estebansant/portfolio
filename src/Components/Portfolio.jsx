@@ -9,7 +9,8 @@ const Portfolio = () => {
     <section id="portfolio" className="w-full h-auto mt-5 px-6">
       <h2 className="w-full text-3xl font-Merriweather font-bold text-black">Portfolio</h2>
 
-      <h3 className="w-full text-xl font-Merriweather font-bold text-black mb-5 mt-5">Full Websites</h3>
+      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mb-1 mt-5">Full Websites</h3>
+      <p className="text-base font-Lato font-normal text-secondary-black mb-5 text-justify">These are my most ambitious projects, which are fully functional websites. Generally they have a bigger scope with multiple pages that are well connected between them.</p>
       <div className="w-full h-auto mt-5 flex flex-shrink-0 flex-col md:flex-row items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {WebsitesData.map((page, index) => {
@@ -32,13 +33,13 @@ const Portfolio = () => {
                   <p className="text-base font-Lato font-normal text-secondary-black mt-4 text-justify">{page.description}</p>
                   <div className="w-full h-auto flex justify-around items-center gap-2 mt-5">
                     <a href={page.link} target="_blank" rel="noopener noreferrer"
-                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5"
+                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Live page</p>
                       <img src={play} alt="play button" className="w-6 h-auto"/>
                     </a>
                     <a href={page.code} target="_blank" rel="noopener noreferrer"
-                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5"
+                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Code</p>
                       <img src={github} alt="github logo" className="w-6 h-auto"/>
@@ -51,7 +52,8 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <h3 className="w-full text-xl font-Merriweather font-bold text-black mb-5 mt-10">Smaller Projects</h3>
+      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mb-1 mt-10">Smaller Projects</h3>
+      <p className="text-base font-Lato font-normal text-secondary-black mb-5 text-justify">These are smaller projects that I mostly did to practice code, or learn new things like React. Their scope is limited and are not so ambitious.</p>
       <div className="w-full h-auto mt-5 flex flex-shrink-0 flex-col md:flex-row items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {ProjectsData.map((project, i) => {
@@ -74,13 +76,13 @@ const Portfolio = () => {
                   <p className="text-base font-Lato font-normal text-secondary-black mt-4 text-justify">{project.description}</p>
                   <div className="w-full h-auto flex justify-around items-center gap-2 mt-5">
                     <a href={project.link} target="_blank" rel="noopener noreferrer"
-                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5"
+                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Live page</p>
                       <img src={play} alt="play button" className="w-6 h-auto"/>
                     </a>
                     <a href={project.code} target="_blank" rel="noopener noreferrer"
-                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5"
+                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Code</p>
                       <img src={github} alt="github logo" className="w-6 h-auto"/>
