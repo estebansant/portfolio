@@ -1,6 +1,6 @@
-import todos from '../assets/images/projects/Todos_screenshot.png';
-import codes from '../assets/images/projects/Codes_screenshot.png';
-import batatabit from '../assets/images/projects/Batatabit_screenshot.png';
+import todos from '../../public/assets/images/projects/Todos_screenshot.png';
+import codes from '../../public/assets/images/projects/Codes_screenshot.png';
+import batatabit from '../../public/assets/images/projects/Batatabit_screenshot.png';
 
 export const ProjectsData =[
     {

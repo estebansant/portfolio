@@ -4,7 +4,7 @@ import { SkillsData } from '../dataStructures/SkillsData'
 const Skills = () => {
   return (
     <section id="skills" className="w-full h-auto mt-6 px-6">
-      <h2 className="font-Merriweather text-black font-bold text-2xl">Skills</h2>
+      <h2 className="font-Merriweather text-black font-bold text-3xl">Skills</h2>
       <div className="w-auto h-64 flex items-center overflow-x-auto overscroll-x-contain scroll-smooth mr-4">
 
         {SkillsData.map((skill, index) => {

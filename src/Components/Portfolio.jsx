@@ -1,60 +1,96 @@
 import React from 'react';
 import { WebsitesData } from '../dataStructures/WebsitesData';
 import { ProjectsData } from '../dataStructures/ProjectsData';
+import play from '../../public/assets/icons/play.svg';
+import github from '../../public/assets/icons/github.svg';
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="w-full h-auto mt-5">
-      <h2>Portfolio</h2>
-      <div>
-        <h3>Full Websites</h3>
-        {WebsitesData.map((page, index) => {
-          return(
-            <div key={index}>
-              <div>
-                <img src={page.image} alt={page.alt}/>
-              </div>
-              <div>
-                <h4>{page.title}</h4>
-                <div>
-                  {page.skills?.map((tools, key) =>{
-                    return(
-                      <div key={key}>{tools}</div>
-                    )
-                  })}
-                </div>
-                <p>{page.description}</p>
-                <a href={page.link}>Live page</a>
-                <a href={page.code}>Watch code</a>
-              </div>
-            </div>
-          )
-        })}
-      </div>
-      <div>
-        <h3>Smaller Projects</h3>
-        {ProjectsData.map((project, i) => {
-          return(
-            <div key={i}>
-              <div>
-                <img src={project.image} alt={project.alt}/>
-              </div>
-              <div>
-                <h4>{project.title}</h4>
-                <div>
-                  {project.skills?.map((tools, k) =>{
+    <section id="portfolio" className="w-full h-auto mt-5 px-6">
+      <h2 className="w-full text-3xl font-Merriweather font-bold text-black">Portfolio</h2>
+
+      <h3 className="w-full text-xl font-Merriweather font-bold text-black mb-5 mt-5">Full Websites</h3>
+      <div className="w-full h-auto mt-5 flex flex-shrink-0 flex-col md:flex-row items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {WebsitesData.map((page, index) => {
+            return(
+              <div key={index} className="w-full max-w-xs h-auto border-solid border-2 border-black rounded-sm">
+                <img src={page.image} alt={page.alt}
+                  className="w-full h-auto object-cover rounded-t-sm border-b-2 border-b-solid border-b-black"
+                />
+                <div className="w-full h-auto p-4">
+                  <h4 className="w-full text-xl font-Merriweather font-bold text-black">{page.title}</h4>
+                  <div className="w-full h-auto flex items-center gap-2 mt-1.5">
+                    {page.skills?.map((tools, key) =>{
                       return(
-                        <div key={k}>{tools}</div>
+                        <div key={key} className="w-full border-solid border-2 border-black rounded-sm text-center">
+                          <p className="text-xs font-Lato font-semibold text-secondary-black p-1">{tools}</p>
+                        </div>
                       )
                     })}
+                  </div>
+                  <p className="text-base font-Lato font-normal text-secondary-black mt-4 text-justify">{page.description}</p>
+                  <div className="w-full h-auto flex justify-around items-center gap-2 mt-5">
+                    <a href={page.link} target="_blank" rel="noopener noreferrer"
+                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5"
+                    >
+                      <p className="text-base font-Lato font-semibold text-secondary-black">Live page</p>
+                      <img src={play} alt="play button" className="w-6 h-auto"/>
+                    </a>
+                    <a href={page.code} target="_blank" rel="noopener noreferrer"
+                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5"
+                    >
+                      <p className="text-base font-Lato font-semibold text-secondary-black">Code</p>
+                      <img src={github} alt="github logo" className="w-6 h-auto"/>
+                    </a>
+                  </div>
                 </div>
-                <p>{project.description}</p>
-                <a href={project.link}>Live page</a>
-                <a href={project.code}>Watch code</a>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
+      </div>
+
+      <h3 className="w-full text-xl font-Merriweather font-bold text-black mb-5 mt-10">Smaller Projects</h3>
+      <div className="w-full h-auto mt-5 flex flex-shrink-0 flex-col md:flex-row items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {ProjectsData.map((project, i) => {
+            return(
+              <div key={i} className="w-full max-w-xs h-auto border-solid border-2 border-black rounded-sm">
+                <img src={project.image} alt={project.alt}
+                  className="w-full h-auto object-cover rounded-t-sm border-b-2 border-b-solid border-b-black"
+                />
+                <div className="w-full h-auto p-4">
+                  <h4 className="w-full text-xl font-Merriweather font-bold text-black">{project.title}</h4>
+                  <div className="w-full h-auto flex items-center gap-2 mt-1.5">
+                    {project.skills?.map((tools, k) =>{
+                        return(
+                          <div key={k} className="w-full border-solid border-2 border-black rounded-sm text-center">
+                            <p className="text-xs font-Lato font-semibold text-secondary-black p-1">{tools}</p>
+                          </div>
+                        )
+                      })}
+                  </div>
+                  <p className="text-base font-Lato font-normal text-secondary-black mt-4 text-justify">{project.description}</p>
+                  <div className="w-full h-auto flex justify-around items-center gap-2 mt-5">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer"
+                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5"
+                    >
+                      <p className="text-base font-Lato font-semibold text-secondary-black">Live page</p>
+                      <img src={play} alt="play button" className="w-6 h-auto"/>
+                    </a>
+                    <a href={project.code} target="_blank" rel="noopener noreferrer"
+                      className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5"
+                    >
+                      <p className="text-base font-Lato font-semibold text-secondary-black">Code</p>
+                      <img src={github} alt="github logo" className="w-6 h-auto"/>
+                    </a>
+                </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </div>
     </section>
   )

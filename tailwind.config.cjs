@@ -27,6 +27,7 @@ module.exports = {
       Lato:['Lato', 'sans-serif']
     },
     fontSize:{
+      'xs': '12px',
       'sm': '14px',
       'base': '16px',
       'l': '18px',
@@ -38,6 +39,7 @@ module.exports = {
     },
     borderRadius: {
       'none': '0',
+      'xs': '6px',
       'sm': '8px',
       'md': '12px',
       'lg': '16px',
