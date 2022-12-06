@@ -1,8 +1,8 @@
 import React from 'react';
 import { WebsitesData } from '../dataStructures/WebsitesData';
 import { ProjectsData } from '../dataStructures/ProjectsData';
-import play from '../../public/assets/icons/play.svg';
-import github from '../../public/assets/icons/github.svg';
+import play from '../assets/icons/play.svg';
+import github from '../assets/icons/github.svg';
 
 const Portfolio = () => {
   return (

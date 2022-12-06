@@ -1,7 +1,7 @@
-import achorded from '../../public/assets/images/projects/Achorded_screenshot.png';
-import istmo from '../../public/assets/images/projects/Istmo_screenshot.png';
-import theScientificRoom from '../../public/assets/images/projects/TSR_screenshot.png';
-import estebansant from '../../public/assets/images/projects/Notfinal_screenshot.png';
+import achorded from '../assets/images/projects/Achorded_screenshot.png';
+import istmo from '../assets/images/projects/Istmo_screenshot.png';
+import theScientificRoom from '../assets/images/projects/TSR_screenshot.png';
+import estebansant from '../assets/images/projects/Notfinal_screenshot.png';
 
 export const WebsitesData = [
     {

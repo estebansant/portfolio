@@ -1,11 +1,11 @@
-import html from '../../public/assets/images/logos/HTML_logo.png';
-import css from '../../public/assets/images/logos/CSS_logo.png';
-import js from '../../public/assets/images/logos/JS_logo.png';
-import reactLogo from '../../public/assets/images/logos/React_logo.png';
-import git from '../../public/assets/images/logos/Git_logo.png';
-import tailwind from '../../public/assets/images/logos/Tailwind_logo.png';
-import sass from '../../public/assets/images/logos/Sass_logo.png';
-import vite from '../../public/assets/images/logos/Vite_logo.png';
+import html from '../assets/images/logos/HTML_logo.png';
+import css from '../assets/images/logos/CSS_logo.png';
+import js from '../assets/images/logos/JS_logo.png';
+import reactLogo from '../assets/images/logos/React_logo.png';
+import git from '../assets/images/logos/Git_logo.png';
+import tailwind from '../assets/images/logos/Tailwind_logo.png';
+import sass from '../assets/images/logos/Sass_logo.png';
+import vite from '../assets/images/logos/Vite_logo.png';
 
 export const SkillsData = [
     {

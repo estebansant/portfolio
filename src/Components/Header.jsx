@@ -1,5 +1,5 @@
 import React from 'react'
-import esteban from '../../public/assets/icons/Esteban_Santiago.svg'
+import esteban from '../assets/icons/Esteban_Santiago.svg'
 
 const Header = () => {
   return (

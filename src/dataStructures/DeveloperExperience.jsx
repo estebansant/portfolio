@@ -19,7 +19,7 @@ export const DeveloperExperience = [
     },
     {
         year:  '2021',
-        title: 'Started learning code on Platzi',
+        title: 'Started to learn code on Platzi',
         duration: '1 year and a half',
         details: 'The day after I wrote my first line of code, I decided to buy a subscription in Platzi, where I started to learn the basics things about coding. HTML, CSS and JavaScript were the first steps in my path to become a programmer. I continue to learn new things there, and the most important thing that I rescue from Platzi is "to never stop learning".'
     },
