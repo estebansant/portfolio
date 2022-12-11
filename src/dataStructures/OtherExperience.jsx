@@ -15,6 +15,6 @@ export const OtherExperience = [
         year:  '2020',
         title: 'Freelancer at Fiverr',
         duration: '2 years',
-        details: 'I am a freelancer who makes whiteboard animation videos on Fiverr. Since I began, I have worked with more than 90 clients from all over the world and they have left me an overall rating of 5 stars.'
+        details: 'I work as a freelancer who makes whiteboard animation videos on Fiverr. Since I began, I have worked with more than 90 clients from all over the world and they have left me an overall rating of 5 stars.'
     },
 ]
