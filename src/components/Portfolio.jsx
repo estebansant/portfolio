@@ -36,13 +36,13 @@ const Portfolio = () => {
                       className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Live page</p>
-                      <img src={play} alt="play button" className="w-6 h-auto"/>
+                      <img src={play} alt="play button" className="w-6 h-6"/>
                     </a>
                     <a href={page.code} target="_blank" rel="noopener noreferrer"
                       className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Code</p>
-                      <img src={github} alt="github logo" className="w-6 h-auto"/>
+                      <img src={github} alt="github logo" className="w-6 h-6"/>
                     </a>
                   </div>
                 </div>

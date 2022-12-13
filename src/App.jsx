@@ -1,12 +1,13 @@
 import React from 'react';
-import { Header } from './Components/Header';
-import { Home } from './Components/Home';
-import { About } from './Components/About';
-import { Skills } from './Components/Skills';
-import { Portfolio } from './Components/Portfolio';
-import { Experience } from './Components/Experience';
-import { Contact } from './Components/Contact';
-import { Footer } from './Components/Footer';
+import { Header } from './components/Header';
+import { Home } from './components/Home';
+import { About } from './components/About';
+import { Skills } from './components/Skills';
+import { Portfolio } from './components/Portfolio';
+import { Experience } from './components/Experience';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+import { MobileBar } from './components/MobileBar'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Portfolio />
       <Experience />
       <Contact />
+      <MobileBar />
       <Footer />
     </React.Fragment>
   )
