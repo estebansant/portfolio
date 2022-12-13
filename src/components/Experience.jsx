@@ -14,13 +14,13 @@ const Experience = () => {
           return(
             <li key={index} className="mb-10 ml-4">
               <div className="absolute w-3 h-3 rounded-full bg-gray mt-1.5 -left-1.5 border border-white" />
-              <p className="flex flex-wrap gap-x-4 gap-y-1 flex-row items-center justify-start text-sm md:text-base">
-                <span className="inline-block px-2 py-1 font-semibold font-Lato text-white bg-black rounded-sm">  
+              <span className="flex flex-wrap gap-x-4 gap-y-1 flex-row items-center justify-start text-sm md:text-base">
+                <p className="inline-block px-2 py-1 font-semibold font-Lato text-white bg-black rounded-sm">  
                   {item.year}
-                </span>
+                </p>
                 <h3 className="text-l font-Lato font-semibold text-black">{item.title}</h3>
                 <div className="my-1 text-sm font-Lato font-base text-gray">{item.duration}</div>
-              </p>
+              </span>
               <p className="my-2 text-base font-Lato text-secondary-black">{item.details}</p>
             </li>
           )
@@ -35,13 +35,13 @@ const Experience = () => {
           return(
             <li key={i} className="mb-10 ml-4">
               <div className="absolute w-3 h-3 rounded-full bg-gray mt-1.5 -left-1.5 border border-white" />
-              <p className="flex flex-wrap gap-x-4 gap-y-1 flex-row items-center justify-start text-sm md:text-base">
-                <span className="inline-block px-2 py-1 font-semibold font-Lato text-white bg-black rounded-sm">  
+              <span className="flex flex-wrap gap-x-4 gap-y-1 flex-row items-center justify-start text-sm md:text-base">
+                <p className="inline-block px-2 py-1 font-semibold font-Lato text-white bg-black rounded-sm">  
                   {job.year}
-                </span>
+                </p>
                 <h3 className="text-l font-Lato font-semibold text-black">{job.title}</h3>
                 <div className="my-1 text-sm font-Lato font-base text-gray">{job.duration}</div>
-              </p>
+              </span>
               <p className="my-2 text-base font-Lato text-secondary-black">{job.details}</p>
             </li>
           )

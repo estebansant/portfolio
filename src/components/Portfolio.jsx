@@ -1,13 +1,13 @@
 import React from 'react';
 import { WebsitesData } from '../dataStructures/WebsitesData';
 import { ProjectsData } from '../dataStructures/ProjectsData';
-import play from '../assets/icons/play.svg';
-import github from '../assets/icons/github.svg';
+import playBlack from '../assets/icons/black/play_black.svg';
+import githubBlack from '../assets/icons/black/github_black.svg';
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="w-full h-auto mt-5 px-6">
-      <h2 className="w-full text-3xl font-Merriweather font-bold text-black">Portfolio</h2>
+    <section id="portfolio" className="w-full h-auto px-6">
+      <h2 className="w-full text-3xl font-Merriweather  mt-5 font-bold text-black">Portfolio</h2>
 
       <h3 className="w-full text-2xl font-Merriweather font-bold text-black mb-1 mt-5">Full Websites</h3>
       <p className="text-base font-Lato font-normal text-secondary-black mb-5 text-justify">These are my most ambitious projects, which are fully functional websites. Generally they have a bigger scope with multiple pages that are well connected between them.</p>
@@ -36,13 +36,13 @@ const Portfolio = () => {
                       className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Live page</p>
-                      <img src={play} alt="play button" className="w-6 h-6"/>
+                      <img src={playBlack} alt="play button" className="w-6 h-6"/>
                     </a>
                     <a href={page.code} target="_blank" rel="noopener noreferrer"
                       className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Code</p>
-                      <img src={github} alt="github logo" className="w-6 h-6"/>
+                      <img src={githubBlack} alt="github logo" className="w-6 h-6"/>
                     </a>
                   </div>
                 </div>
@@ -79,13 +79,13 @@ const Portfolio = () => {
                       className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Live page</p>
-                      <img src={play} alt="play button" className="w-6 h-auto"/>
+                      <img src={playBlack} alt="play button" className="w-6 h-auto"/>
                     </a>
                     <a href={project.code} target="_blank" rel="noopener noreferrer"
                       className="w-1/2 h-auto flex flex-row justify-evenly items-center border-solid border-2 border-black rounded-xs p-1.5 transition transition-all duration-300 ease-in-out hover:border-green hover:border-3 hover:shadow-md2"
                     >
                       <p className="text-base font-Lato font-semibold text-secondary-black">Code</p>
-                      <img src={github} alt="github logo" className="w-6 h-auto"/>
+                      <img src={githubBlack} alt="github logo" className="w-6 h-auto"/>
                     </a>
                 </div>
                 </div>
