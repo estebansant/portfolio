@@ -6,7 +6,7 @@ import githubBlack from '../assets/icons/black/github_black.svg';
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="w-full h-auto px-6 md:px-[50px]">
+    <section id="portfolio" className="w-full h-auto px-6 md:px-[50px] special:px-[125px]">
       <h2 className="w-full text-3xl font-Merriweather mt-5 font-bold text-black md:text-5xl md:mt-10">Portfolio</h2>
 
       <h3 className="w-full text-2xl font-Merriweather font-bold text-black mb-1 mt-5 md:text-3xl">Full Websites</h3>

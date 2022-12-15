@@ -3,7 +3,7 @@ import { SkillsData } from '../dataStructures/SkillsData'
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-full h-auto mt-6 px-6 md:px-[50px] md:mt-10">
+    <section id="skills" className="w-full h-auto mt-6 px-6 md:px-[50px] md:mt-10 special:px-[125px]">
       <h2 className="font-Merriweather text-black font-bold text-3xl md:text-5xl">Skills</h2>
       <div className="w-auto h-[200px] flex items-center overflow-x-auto overscroll-x-contain scroll-smooth mr-4 md:overflow-none md:overscroll-none md:place-items-center md:grid md:grid-cols-3 md:gap-4 lg:grid-cols-4 md:mr-0 md:h-auto">
 
