@@ -7,7 +7,7 @@ import sunBlack from '../assets/icons/black/sun_black.svg';
 
 const MobileBar = () => {
   return (
-    <section className="w-full h-auto z-20 p-4 fixed bottom-0 bg-secondary-white rounded-t-lg border-solid border-2 border-black">
+    <section className="w-full h-auto z-20 p-4 fixed bottom-0 bg-secondary-white rounded-t-lg border-solid border-2 border-black lg:hidden">
       <div className="w-full h-full flex items-center justify-evenly gap-3">
         <a href="#skills" className="w-8 h-8">
           <img src={reactBlack} alt="go to skills" className="w-full h-full"/>

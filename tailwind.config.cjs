@@ -12,7 +12,7 @@ module.exports = {
       md: '768px',
       lg: '1280px',
       xl: '2560px',
-      'special': { 'raw': '(min-height: 600px)', 'raw': '(min-width:1024px)' },
+      'special': { 'raw': '(max-height: 600px)', 'raw': '(max-width:1024px)' },
     },
     colors: {
       // Color palette
