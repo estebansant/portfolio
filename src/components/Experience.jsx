@@ -4,7 +4,7 @@ import { OtherExperience } from '../dataStructures/OtherExperience';
 
 const Experience = () => {
   return (
-    <section id="experience" className="w-full h-auto mt-5 overflow-hidden px-6 md:mt-10 md:px-[50px] special:px-[125px] lg:px-[17.5%]">
+    <section id="experience" className="w-full h-auto mt-5 overflow-hidden px-6 md:mt-10 md:px-[50px] special:px-[125px] lg:px-[17.5%] xl:px-[20%]">
       <h2 className="w-full text-3xl font-Merriweather font-bold text-black md:text-5xl">Experience</h2>
       <h3 className="w-full text-2xl font-Merriweather font-bold text-black mt-4 md:text-3xl">Developer experience</h3>
       <p className="w-full text-base font-Lato font-semibold text-secondary-black mt-0.5 mb-4 md:w-[85%]">Timeline through my journey with coding.</p>
