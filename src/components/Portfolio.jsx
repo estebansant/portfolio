@@ -6,11 +6,11 @@ import githubBlack from '../assets/icons/black/github_black.svg';
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="w-full h-auto px-6">
-      <h2 className="w-full text-3xl font-Merriweather  mt-5 font-bold text-black">Portfolio</h2>
+    <section id="portfolio" className="w-full h-auto px-6 md:px-[50px]">
+      <h2 className="w-full text-3xl font-Merriweather mt-5 font-bold text-black md:text-5xl md:mt-10">Portfolio</h2>
 
-      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mb-1 mt-5">Full Websites</h3>
-      <p className="text-base font-Lato font-normal text-secondary-black mb-5 text-justify">These are my most ambitious projects, which are fully functional websites. Generally they have a bigger scope with multiple pages that are well connected between them.</p>
+      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mb-1 mt-5 md:text-3xl">Full Websites</h3>
+      <p className="text-base font-Lato font-normal text-secondary-black mb-5 text-justify md:w-[85%]">These are my most ambitious projects, which are fully functional websites. Generally they have a bigger scope with multiple pages that are well connected between them.</p>
       <div className="w-full h-auto mt-5 flex flex-shrink-0 flex-col md:flex-row items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {WebsitesData.map((page, index) => {
@@ -52,8 +52,8 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mb-1 mt-10">Smaller Projects</h3>
-      <p className="text-base font-Lato font-normal text-secondary-black mb-5 text-justify">These are smaller projects that I mostly did to practice code, or learn new things like React. Their scope is limited and are not so ambitious.</p>
+      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mb-1 mt-10 md:text-3xl">Smaller Projects</h3>
+      <p className="text-base font-Lato font-normal text-secondary-black mb-5 text-justify md:w-[85%]">These are smaller projects that I mostly did to practice code, or learn new things like React. Their scope is limited and are not so ambitious.</p>
       <div className="w-full h-auto mt-5 flex flex-shrink-0 flex-col md:flex-row items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {ProjectsData.map((project, i) => {

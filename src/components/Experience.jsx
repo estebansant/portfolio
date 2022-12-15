@@ -4,12 +4,12 @@ import { OtherExperience } from '../dataStructures/OtherExperience';
 
 const Experience = () => {
   return (
-    <section id="experience" className="w-full h-auto mt-5 px-6 md:px-[28%]">
-      <h2 className="w-full text-3xl font-Merriweather font-bold text-black">Experience</h2>
-      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mt-4">Developer experience</h3>
-      <p className="w-full text-base font-Lato font-semibold text-secondary-black mt-0.5 mb-4">Timeline through my journey with coding.</p>
+    <section id="experience" className="w-full h-auto mt-5 overflow-hidden px-6 md:mt-10 md:px-[50px]">
+      <h2 className="w-full text-3xl font-Merriweather font-bold text-black md:text-5xl">Experience</h2>
+      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mt-4 md:text-3xl">Developer experience</h3>
+      <p className="w-full text-base font-Lato font-semibold text-secondary-black mt-0.5 mb-4 md:w-[85%]">Timeline through my journey with coding.</p>
 
-      <ol className="w-full md:m-auto flex flex-col relative border-l border-gray">
+      <ol className="w-full md:m-auto flex flex-col relative border-l border-gray md:ml-[15%] md:pr-[30%]">
         {DeveloperExperience.map((item, index) => {
           return(
             <li key={index} className="mb-10 ml-4">
@@ -27,10 +27,10 @@ const Experience = () => {
         })}
       </ol>
 
-      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mt-8">Other experience</h3>
-      <p className="w-full text-base font-Lato font-semibold text-secondary-black mt-0.5 mb-4">This is my experience with jobs that are not related with programming, but that gave a good set of skills for remote jobs.</p>
+      <h3 className="w-full text-2xl font-Merriweather font-bold text-black mt-8 md:text-3xl">Other experience</h3>
+      <p className="w-full text-base font-Lato font-semibold text-secondary-black mt-0.5 mb-4 md:w-[85%]">This is my experience with jobs that are not related with programming, but that gave me a good set of skills for remote jobs.</p>
 
-      <ol className="w-full md:m-auto flex flex-col relative border-l border-gray">
+      <ol className="w-full md:m-auto flex flex-col relative border-l border-gray md:ml-[15%] md:pr-[30%]">
         {OtherExperience.map((job, i) => {
           return(
             <li key={i} className="mb-10 ml-4">

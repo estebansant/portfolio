@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <section id="contact" className="w-full h-auto px-6 mt-8">
-      <h2 className="w-full text-3xl font-Merriweather font-bold text-black mb-5">Contact</h2>
+    <section id="contact" className="w-full h-auto px-6 mt-8 md:mt-10 md:px-[50px]">
+      <h2 className="w-full text-3xl font-Merriweather font-bold text-black mb-5 md:text-5xl md:text-center">Contact</h2>
 
       <form
         name="contactEsteban"
@@ -11,7 +11,7 @@ const Contact = () => {
         data-netlify="true"
         onSubmit="submit"
         data-netlify-honeypot="bot-field"
-        className="w-full h-auto border-solid border-2 border-black rounded-md p-6 flex flex-col items-center"
+        className="w-full h-auto border-solid border-2 border-black rounded-md p-6 flex flex-col items-center md:w-[70%] md:m-auto"
       >
         {/* Hidden fields */}
         <input type="hidden" name="none" value="contactEsteban" />
