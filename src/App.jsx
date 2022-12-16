@@ -26,14 +26,18 @@ const App = () => {
       <Home />
       <About />
       <Skills />
-      <Portfolio />
+      <Portfolio 
+        theme={theme}
+      />
       <Experience />
       <Contact />
       <MobileBar 
         theme={theme}
         handleTheme={handleTheme}
       />
-      <Footer />
+      <Footer 
+        theme={theme}
+      />
     </React.Fragment>
   )
 }

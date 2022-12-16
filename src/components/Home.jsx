@@ -20,11 +20,11 @@ const Home = () => {
       </div>
       
       <div className="w-full h-auto px-4 flex justify-center items-center shrink-0 space-x-3 z-10">
-        <a href="#contact" className="w-36 h-12 bg-black rounded-md flex items-center justify-center shadow-md transtition transition-all duration-300 ease-in-out hover:bg-secondary-white md:w-48 md:h-14">
-          <p className="px-5 py-1 text-white font-Lato font-semibold text-lg transtition transition-all duration-300 ease-in-out hover:text-black md:text-xl">Contact me</p>
+        <a href="#contact" className="w-36 h-12 bg-black rounded-md flex items-center justify-center shadow-md text-white transtition transition-all duration-300 ease-in-out hover:bg-secondary-white hover:text-black md:w-48 md:h-14 dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white">
+          <p className="px-5 py-1 font-Lato font-semibold text-lg md:text-xl">Contact me</p>
         </a>
-        <button className="w-36 h-12 bg-black rounded-md shadow-md transtition transition-all duration-300 ease-in-out hover:bg-secondary-white md:w-48 md:h-14">
-          <p className="px-3 py-1 text-white font-Lato font-semibold text-lg transtition transition-all duration-300 ease-in-out hover:text-black md:text-xl">Download CV</p>
+        <button className="w-36 h-12 bg-black rounded-md shadow-md text-white transtition transition-all duration-300 ease-in-out hover:bg-secondary-white hover:text-black md:w-48 md:h-14 dark:bg-white dark:hover:bg-black dark:text-black dark:hover:text-white">
+          <p className="px-3 py-1  font-Lato font-semibold text-lg ease-in-out md:text-xl">Download CV</p>
         </button>
       </div>
 
