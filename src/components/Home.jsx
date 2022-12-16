@@ -3,6 +3,7 @@ import backgroundMobile from '../assets/images/background_small.jpg';
 import background from '../assets/images/background_big.jpg';
 import desktop from '../assets/images/desktop.png';
 import {motion} from 'framer-motion';
+import cv from '../assets/downloadable/CV-Esteban_Santiago.pdf';
 
 const Home = () => {
   return (
@@ -49,9 +50,14 @@ const Home = () => {
         <a href="#contact" className="w-36 h-12 bg-black rounded-md flex items-center justify-center shadow-md text-white transtition transition-all duration-300 ease-in-out hover:bg-secondary-white hover:text-black md:w-48 md:h-14 dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white">
           <p className="px-5 py-1 font-Lato font-semibold text-lg md:text-xl">Contact me</p>
         </a>
-        <button className="w-36 h-12 bg-black rounded-md shadow-md text-white transtition transition-all duration-300 ease-in-out hover:bg-secondary-white hover:text-black md:w-48 md:h-14 dark:bg-white dark:hover:bg-black dark:text-black dark:hover:text-white">
+        <a 
+          href={cv}
+          download="CV-Esteban_Santiago"
+          target='_blank'
+          className="w-36 h-12 bg-black rounded-md shadow-md text-white transtition transition-all duration-300 ease-in-out hover:bg-secondary-white hover:text-black md:w-48 md:h-14 dark:bg-white dark:hover:bg-black dark:text-black dark:hover:text-white flex items-center justify-center"
+        >
           <p className="px-3 py-1  font-Lato font-semibold text-lg ease-in-out md:text-xl">Download CV</p>
-        </button>
+        </a>
       </motion.div>
 
     </section>

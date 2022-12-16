@@ -4,6 +4,7 @@ import estebanWhite from '../assets/icons/Esteban_Santiago_white.svg'
 import moon from '../assets/icons/black/moon.svg';
 import sun from '../assets/icons/white/sun.svg';
 import {motion} from 'framer-motion';
+import cv from '../assets/downloadable/CV-Esteban_Santiago.pdf';
 
 const Header = ({theme, handleTheme}) => {
 
@@ -38,7 +39,12 @@ const Header = ({theme, handleTheme}) => {
           <a href="#contact" className="text-center w-auto h-auto">
             <p className="font-Lato text-l font-semibold text-black dark:text-white hover:underline">Contact</p>
           </a>
-          <a href="#" className="text-center w-auto h-auto">
+          <a
+            href={cv}
+            download="CV-Esteban_Santiago"
+            target='_blank'
+            className="text-center w-auto h-auto"
+          >
             <p className="font-Lato text-l font-semibold text-black dark:text-white hover:underline">Download CV</p>
           </a>
           <button onClick={() => handleTheme()} className="w-6 h-6 transition transition-all duration-250 ease-in-out hover:scale-[115%]">

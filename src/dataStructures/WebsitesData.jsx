@@ -1,7 +1,7 @@
 import achorded from '../assets/images/projects/Achorded_screenshot.png';
 import istmo from '../assets/images/projects/Istmo_screenshot.png';
 import theScientificRoom from '../assets/images/projects/TSR_screenshot.png';
-import estebansant from '../assets/images/projects/Notfinal_screenshot.png';
+import estebansant from '../assets/images/projects/estebansant.png';
 
 export const WebsitesData = [
     {
@@ -27,7 +27,7 @@ export const WebsitesData = [
         alt: 'the scientific room preview',
         title: 'The Scientific Room',
         skills: ['HTML', 'CSS', 'SCSS', 'JavaScript'],
-        description: 'This was my first personal project, where I showcase science videos in English and in Spanish grouped by categories. I used HTML, SCSS and JS to build it.',
+        description: 'This was my first personal project, where I showcase science videos in English and in Spanish grouped by categories.',
         link: 'https://estebansant.github.io/The_Scientific_Room/',
         code: 'https://github.com/estebansant/The_Scientific_Room',
     },
@@ -36,7 +36,7 @@ export const WebsitesData = [
         alt: 'estebansant preview',
         title: 'Estebansant.com',
         skills: ['React', 'Tailwind', 'JavaScript', 'Vite'],
-        description: 'This is my personal portfolio website. Built with React, Tailwind and JavaScript. Not much else to say because you are looking at it.',
+        description: 'This is my personal portfolio. Built with React, Tailwind and JS. Not much else to say because you are looking at it.',
         link: 'https://www.estebansant.com',
         code: 'https://github.com/estebansant/portfolio',
     },
