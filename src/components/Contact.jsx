@@ -34,7 +34,7 @@ const Contact = () => {
 
       <form
         name="contactEsteban"
-        method="post"
+        method="POST"
         data-netlify="true"
         onSubmit="submit"
         data-netlify-honeypot="bot-field"
@@ -56,6 +56,7 @@ const Contact = () => {
               id="first_name"
               placeholder="Name"
               className="w-full h-8 px-3 border-b-2 border-gray bg-white dark:bg-black"
+              required
             />
           </label>
           <label htmlFor="last_name" className="w-full mb-4 flex flex-col space-y-2">
@@ -66,6 +67,7 @@ const Contact = () => {
               id="last_name"
               placeholder="Last name"
               className="w-full h-8 px-3 border-b-2 border-gray bg-white dark:bg-black"
+              required
             />
           </label>
         </div>
@@ -77,6 +79,7 @@ const Contact = () => {
             id="email"
             placeholder="Email"
             className="w-full h-8 px-3 border-b-2 border-gray bg-white dark:bg-black"
+            required
           />
         </label>
         <label htmlFor="message" className="w-full mb-4 flex flex-col space-y-2">
@@ -86,6 +89,7 @@ const Contact = () => {
             id="message"
             placeholder="Write something"
             className="w-full h-40 px-3 border-b-2 border-gray bg-white dark:bg-black"
+            required
           />
         </label>
         <button
