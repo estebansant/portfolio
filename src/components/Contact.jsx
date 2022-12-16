@@ -34,9 +34,8 @@ const Contact = () => {
 
       <form
         name="contactEsteban"
-        method="POST"
+        action="POST"
         data-netlify="true"
-        onSubmit="submit"
         data-netlify-honeypot="bot-field"
         className="w-full h-auto border-solid border-2 border-black rounded-md p-6 flex flex-col items-center md:w-[70%] md:m-auto special:w-[60%] lg:w-[48%] xl:w-[37%] dark:border-white"
       >
@@ -55,7 +54,7 @@ const Contact = () => {
               name="first_name"
               id="first_name"
               placeholder="Name"
-              className="w-full h-8 px-3 border-b-2 border-gray bg-white dark:bg-black"
+              className="w-full h-8 px-3 border-b-2 border-gray bg-white text-secondary-black dark:text-secondary-white dark:bg-black"
               required
             />
           </label>
@@ -66,7 +65,7 @@ const Contact = () => {
               name="last_name"
               id="last_name"
               placeholder="Last name"
-              className="w-full h-8 px-3 border-b-2 border-gray bg-white dark:bg-black"
+              className="w-full h-8 px-3 border-b-2 border-gray bg-white text-secondary-black dark:text-secondary-white dark:bg-black"
               required
             />
           </label>
@@ -78,7 +77,7 @@ const Contact = () => {
             name="email"
             id="email"
             placeholder="Email"
-            className="w-full h-8 px-3 border-b-2 border-gray bg-white dark:bg-black"
+            className="w-full h-8 px-3 border-b-2 border-gray bg-white text-secondary-black dark:text-secondary-white dark:bg-black"
             required
           />
         </label>
@@ -88,16 +87,15 @@ const Contact = () => {
             name="message"
             id="message"
             placeholder="Write something"
-            className="w-full h-40 px-3 border-b-2 border-gray bg-white dark:bg-black"
+            className="w-full h-40 px-3 border-b-2 border-gray bg-white dark:bg-black text-secondary-black dark:text-secondary-white"
             required
           />
         </label>
-        <button
+        <input
           type="submit"
           className="w-45 h-12 mt-6 border-solid p-3 border-black border-2 bg-white rounded-md text-l font-Merriweather font-bold text-black text-center shadow-md2 transition transition-all duration-300 ease-in-out hover:border-secondary-white hover:bg-secondary-black hover:text-secondary-white dark:bg-black dark:hover:bg-secondary-white dark:text-white dark:border-white dark:hover:border-secondary-white dark:shadow-md3 dark:hover:text-black"
-        >
-          Let's work together!
-        </button>
+          value="Let's work together!"
+        />
       </form>
     </motion.section>
   )
