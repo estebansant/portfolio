@@ -5,6 +5,7 @@ import playBlack from '../assets/icons/black/play_black.svg';
 import githubBlack from '../assets/icons/black/github_black.svg';
 import play from '../assets/icons/white/play.svg';
 import github from '../assets/icons/white/github.svg';
+import { motion } from "framer-motion";
 
 const Portfolio = ({theme}) => {
   return (

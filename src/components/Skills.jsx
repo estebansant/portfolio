@@ -1,9 +1,36 @@
 import React from 'react';
-import { SkillsData } from '../dataStructures/SkillsData'
+import { SkillsData } from '../dataStructures/SkillsData';
+import { motion } from "framer-motion";
 
 const Skills = () => {
+
+  const screen = {
+    offscreen: {
+      x: '-30vw',
+      opacity: 0,
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        delay: 0.5,
+        duration: 1.6,
+        ease: "easeIn"
+      }
+    }
+  };
+
   return (
-    <section id="skills" className="w-full h-auto mt-6 px-6 md:px-[50px] md:mt-10 special:px-[125px] lg:px-[17.5%] xl:px-[20%]">
+    <motion.section 
+      variants={screen}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{  once: true, amount: 0.4 }}
+      id="skills"
+      className="w-full h-auto mt-6 px-6 md:px-[50px] md:mt-10 special:px-[125px] lg:px-[17.5%] xl:px-[20%]"
+    >
       <h2 className="font-Merriweather text-black font-bold text-3xl md:text-5xl lg:px-[75px] dark:text-white">Skills</h2>
       <div className="w-auto h-[200px] flex items-center overflow-x-auto overscroll-x-contain scroll-smooth mr-4 md:overflow-none md:overscroll-none md:place-items-center md:grid md:grid-cols-3 md:gap-4 lg:grid-cols-4 md:mr-0 md:h-auto">
 
@@ -21,7 +48,7 @@ const Skills = () => {
         })}
 
       </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { DeveloperExperience } from '../dataStructures/DeveloperExperience';
 import { OtherExperience } from '../dataStructures/OtherExperience';
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
