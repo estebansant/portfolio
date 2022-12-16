@@ -1,8 +1,10 @@
 import React from 'react';
 import esteban from '../assets/icons/Esteban_Santiago.svg';
-import moonBlack from '../assets/icons/black/moon_black.svg';
+import moon from '../assets/icons/black/moon.svg';
+import sun from '../assets/icons/white/sun.svg';
 
-const Header = () => {
+const Header = ({theme, handleTheme}) => {
+
   return (
     <header id="header" className="w-screen h-12 bg-secondary-white fixed top-0 z-20 shadow-md2 lg:flex lg:justify-between lg:items-center lg:px-[100px]">
         <div className="w-screen h-full flex items-center justify-center lg:w-auto">
@@ -26,8 +28,13 @@ const Header = () => {
           <a href="#" className="text-center w-auto h-auto hover:underline">
             <p className="font-Lato text-l font-semibold text-black">Download CV</p>
           </a>
-          <button className="w-6 h-6 transition transition-all duration-250 ease-in-out hover:scale-[115%]">
-            <img src={moonBlack} alt="switch to darkmode" className="w-full h-full"/>
+          <button onClick={() => handleTheme()} className="w-6 h-6 transition transition-all duration-250 ease-in-out hover:scale-[115%]">
+            {!theme && 
+              <img src={sun} alt="switch to darkmode" className="w-full h-full"/>
+            }
+            {theme && 
+              <img src={moon} alt="switch to lightmode" className="w-full h-full"/>
+            }
           </button>
         </nav>
     </header>

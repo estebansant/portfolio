@@ -6,13 +6,14 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkmode: 'class',
   theme: {
     screens: {
       sm: '320px',
       md: '768px',
       lg: '1280px',
       xl: '2560px',
-      'special': { 'raw': '(max-height: 600px)', 'raw': '(max-width:1024px)' },
+      'special': { 'raw': '(min-height: 600px) and (min-width:1024px)'},
     },
     colors: {
       // Color palette

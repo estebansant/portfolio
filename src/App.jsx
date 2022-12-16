@@ -7,19 +7,32 @@ import { Portfolio } from './components/Portfolio';
 import { Experience } from './components/Experience';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { MobileBar } from './components/MobileBar'
+import { MobileBar } from './components/MobileBar';
+import { useInitialState } from './useInitialState.js';
 
 const App = () => {
+
+  const {
+    theme,
+    handleTheme
+  } = useInitialState();
+
   return (
     <React.Fragment>
-      <Header />
+      <Header 
+        theme={theme}
+        handleTheme={handleTheme}
+      />
       <Home />
       <About />
       <Skills />
       <Portfolio />
       <Experience />
       <Contact />
-      <MobileBar />
+      <MobileBar 
+        theme={theme}
+        handleTheme={handleTheme}
+      />
       <Footer />
     </React.Fragment>
   )
