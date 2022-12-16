@@ -3,11 +3,18 @@ import esteban from '../assets/icons/Esteban_Santiago.svg';
 import estebanWhite from '../assets/icons/Esteban_Santiago_white.svg'
 import moon from '../assets/icons/black/moon.svg';
 import sun from '../assets/icons/white/sun.svg';
+import {motion} from 'framer-motion';
 
 const Header = ({theme, handleTheme}) => {
 
   return (
-    <header id="header" className="w-screen h-12 bg-secondary-white fixed top-0 z-20 shadow-md2 lg:flex lg:justify-between lg:items-center lg:px-[100px] dark:bg-secondary-black">
+    <motion.header
+      initial={{y: "-1vh", opacity: 0}}
+      animate={{y: 0, opacity: 1}}
+      transition={{type:"spring", duration: 1.2, ease:"easeIn"}}
+      id="header"
+      className="w-screen h-12 bg-secondary-white fixed top-0 z-20 shadow-md2 lg:flex lg:justify-between lg:items-center lg:px-[100px] dark:bg-secondary-black"
+    >
         <div className="w-screen h-full flex items-center justify-center lg:w-auto">
             <a href="#home" className="w-40 h-8/9 mt-1">
                 {theme && 
@@ -43,7 +50,7 @@ const Header = ({theme, handleTheme}) => {
             }
           </button>
         </nav>
-    </header>
+    </motion.header>
   )
 }
 

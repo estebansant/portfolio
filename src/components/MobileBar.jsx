@@ -7,11 +7,17 @@ import sun from '../assets/icons/white/sun.svg';
 import email from '../assets/icons/white/email.svg';
 import portfolio from '../assets/icons/white/portfolio.svg';
 import react from '../assets/icons/white/react.svg';
+import {motion} from 'framer-motion';
 
 const MobileBar = ({theme, handleTheme}) => {
 
   return (
-    <section className="w-full h-auto z-20 p-4 fixed bottom-0 bg-secondary-white rounded-t-lg border-solid border-2 border-b-0 border-black lg:hidden dark:bg-secondary-black dark:border-white">
+    <motion.section
+      initial={{y: "30vh", opacity: 0}}
+      animate={{y: 0, opacity: 1}}
+      transition={{type:"spring", duration: 2, ease:"easeIn"}}
+      className="w-full h-auto z-20 p-4 fixed bottom-0 bg-secondary-white rounded-t-lg border-solid border-2 border-b-0 border-black lg:hidden dark:bg-secondary-black dark:border-white"
+    >
       <div className="w-full h-full flex items-center justify-evenly gap-3">
         <a href="#skills" className="w-8 h-8">
           {!theme &&
@@ -49,7 +55,7 @@ const MobileBar = ({theme, handleTheme}) => {
             }
         </button>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

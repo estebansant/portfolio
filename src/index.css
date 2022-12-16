@@ -4,6 +4,7 @@
 
 html {
     scroll-padding-top: 50px;
+    scroll-behavior: smooth;
 }
 @media(min-width:1280px){
     ::-webkit-scrollbar{
