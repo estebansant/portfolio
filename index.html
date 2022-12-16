@@ -12,5 +12,34 @@
   <body>
     <div id="root" class="bg-white p-0 m-0 dark:bg-black"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <form
+        name="contactEsteban"
+        netlify
+        data-netlify-honeypot="bot-field"
+        hidden
+      >
+
+        <input type="hidden" name="none" value="contactEsteban"/>
+        <div hidden>
+          <input name="bot-field" />
+        </div>
+
+            <input
+              type="text"
+              name="first_name"
+            />
+            <input
+              type="text"
+              name="last_name"
+            />
+          <input
+            type="email"
+            name="email"
+          />
+          <textarea
+            name="message"
+            required></textarea>
+      </form>
   </body>
 </html>

@@ -34,13 +34,11 @@ const Contact = () => {
 
       <form
         name="contactEsteban"
-        action="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        method="post"
         className="w-full h-auto border-solid border-2 border-black rounded-md p-6 flex flex-col items-center md:w-[70%] md:m-auto special:w-[60%] lg:w-[48%] xl:w-[37%] dark:border-white"
       >
         {/* Hidden fields */}
-        <input type="hidden" name="none" value="contactEsteban" />
+        <input type="hidden" name="form-name" value="contactEsteban" />
         <div hidden>
           <input name="bot-field" />
         </div>
