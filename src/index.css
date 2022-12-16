@@ -5,6 +5,7 @@
 html {
     scroll-padding-top: 50px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 @media(min-width:1280px){
     ::-webkit-scrollbar{

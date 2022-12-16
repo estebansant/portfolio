@@ -15,7 +15,7 @@ const Skills = () => {
       transition: {
         type: "spring",
         bounce: 0.2,
-        delay: 0.5,
+        delay: 0.4,
         duration: 1.6,
         ease: "easeIn"
       }

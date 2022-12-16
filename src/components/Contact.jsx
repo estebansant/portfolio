@@ -2,8 +2,34 @@ import React from 'react';
 import { motion } from "framer-motion";
 
 const Contact = () => {
+
+  const contactScreen = {
+    offscreen: {
+      opacity: 0,
+      x: "-35vw",
+    },
+    onscreen: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        delay: 0.4,
+        duration: 1.6,
+        ease: "easeIn"
+      }
+    }
+  };
+
   return (
-    <section id="contact" className="w-full h-auto px-6 mt-10 pb-10 md:mt-10 md:px-[50px] special:px-[125px] lg:px-[17.5%] xl:px-[20%]">
+    <motion.section
+      variants={contactScreen}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{  once: true, amount: 0.1 }}
+      id="contact"
+      className="w-full h-auto px-6 mt-10 pb-10 md:mt-10 md:px-[50px] special:px-[125px] lg:px-[17.5%] xl:px-[20%]"
+    >
       <h2 className="w-full text-3xl font-Merriweather font-bold text-black mb-5 md:text-5xl md:text-center dark:text-white">Contact</h2>
 
       <form
@@ -69,7 +95,7 @@ const Contact = () => {
           Let's work together!
         </button>
       </form>
-    </section>
+    </motion.section>
   )
 }
 
