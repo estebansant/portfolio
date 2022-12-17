@@ -9,6 +9,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { MobileBar } from './components/MobileBar';
 import { useInitialState } from './useInitialState.js';
+import { Helmet } from "react-helmet";
 
 const App = () => {
 
@@ -19,6 +20,10 @@ const App = () => {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Esteban Santiago - Portfolio</title>
+        <meta name="description" content="Personal portfolio of Esteban Santiago. Here you will be able to see all the projects that I have done as a programmer."/>
+      </Helmet>
       <Header 
         theme={theme}
         handleTheme={handleTheme}
