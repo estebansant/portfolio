@@ -9,9 +9,6 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { MobileBar } from './components/MobileBar';
 import { useInitialState } from './useInitialState.js';
-import ReactGA from 'react-ga';
-
-ReactGA.initialize('UA-252410356-1');
 
 const App = () => {
 
