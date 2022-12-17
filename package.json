@@ -12,7 +12,8 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "framer-motion": "^7.10.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
