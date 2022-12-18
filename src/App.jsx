@@ -21,7 +21,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Esteban Santiago - Portfolio</title>
+        <title>Esteban Santiago | Portfolio</title>
         <meta name="description" content="Personal portfolio of Esteban Santiago. Here you will be able to see all the projects that I have done as a programmer."/>
       </Helmet>
       <Header 
