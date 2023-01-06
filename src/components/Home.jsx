@@ -38,7 +38,7 @@ const Home = () => {
           animate={{x: 0, opacity: 1}}
           transition={{type:"spring", duration: 1.6, bounce: 0.1, ease:"easeIn"}}
           className="w-4/5 mt-2 text-xl font-Lato font-bold text-secondary-black leading-none md:text-4xl md:w-[55%] lg:w-[45%]"
-        >Frontend developer in React</motion.h2>
+        >Front-end Web Developer</motion.h2>
       </div>
       
       <motion.div
