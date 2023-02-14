@@ -1,6 +1,7 @@
 import todos from '../assets/images/projects/Todos_screenshot.png';
 import codes from '../assets/images/projects/Codes_screenshot.png';
 import batatabit from '../assets/images/projects/Batatabit_screenshot.png';
+import movieApp from '../assets/images/projects/Movies_screenshot.png';
 
 export const ProjectsData =[
     {
@@ -11,6 +12,15 @@ export const ProjectsData =[
         description: 'This was my first React project. It is a Todos app where you can create, complete, search for todos you have created, and also delte them.',
         link: 'https://estebansant.github.io/todos_app/',
         code: 'https://github.com/estebansant/todos_app',
+    },
+    {
+        image: movieApp,
+        alt: 'movie app preview',
+        title: 'Another Movie App',
+        skills: ['HTML', 'CSS', 'JavaScript', 'APIs'],
+        description: 'Practice of API REST integrations using Axios. I use the API from TMDB to showcase multiple movies. HTML and CSS are only designed for phones.',
+        link: 'https://estebansant.github.io/movie_api_practice/',
+        code: 'https://github.com/estebansant/movie_api_practice',
     },
     {
         image: codes,
