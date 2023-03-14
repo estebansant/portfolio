@@ -40,7 +40,9 @@ const About = () => {
       <p
         className="w-full px-6 mt-4 mb-4 text-justify text-secondary-black text-base font-Lato font-normal md:px-[25%] lg:px-[32%] xl:px-[36%] dark:text-secondary-white"
       >
-        I am a young physics student who learned all that he knows about coding thanks to <a href="https://platzi.com/" target="_blank" rel="noopener noreferrer" className="underline">Platzi</a>, <a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer" className="underline">Stack Overflow</a> and many hours of reading through documentation files. So, basically I am a self taught programmer. <br/><br/> I am currently looking for a job as a frontend developer. Contact me to start working together.
+        I am a self-taught Frontend Developer who learned all that he knows about coding thanks to the courses that are available on<a href="https://platzi.com/" target="_blank" rel="noopener noreferrer" className="underline">Platzi</a>, searching in<a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer" className="underline">Stack Overflow</a> and many hours of reading through documentation files.<br/><br/>
+        
+        I am currently offering my services as a freelancer. I am actively seeking to grow as a professional while working in exciting projects for my clients. Contact me to start working together.
       </p>
     </motion.section>
   )
